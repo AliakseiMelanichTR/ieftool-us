@@ -1,5 +1,5 @@
 {
-  "name": "ieftool",
+  "name": "ieftool-us",
   "version": "1.0.12",
   "description": "Development tool for Azure B2C IEF policies",
   "main": "dist/entry.js",
@@ -23,7 +23,7 @@
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
   },
   "bin": {
-    "ieftool": "./dist/entry.js"
+    "ieftoolus": "./dist/entry.js"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",

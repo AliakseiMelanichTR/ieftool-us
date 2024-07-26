@@ -5,7 +5,7 @@ import constants from '../constants';
 
 const tokenInterceptor: ITokenInterceptor = (client) => async (value) => {
     const request = await client.acquireTokenByClientCredential({
-        scopes: ["https://graph.microsoft.com/.default"]
+        scopes: ["https://graph.microsoft.us/.default"]
     });
 
     value.headers = {
@@ -30,7 +30,7 @@ export class ApiClient implements IApiClient {
             auth: {
                 clientId,
                 clientSecret,
-                authority: `https://login.microsoftonline.com/${tenant}`
+                authority: `https://login.microsoftonline.us/${tenant}`
             }
         }
         const app = new msal.ConfidentialClientApplication(clientConfig);
